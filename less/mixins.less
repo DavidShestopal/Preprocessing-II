@@ -1,1 +1,20 @@
 // Mixins in here
+@line-color: silver;
+@white: white;
+@main-color: black;
+@teal: #008080;
+
+.button(@width, @bg-color, @txt-color) {
+  width: @width;
+  background: @bg-color;
+  color: @txt-color;
+  border-radius: 10px;
+  padding: 1.3rem 3.1rem;
+  font-size: 1.8rem;
+  text-align: center;
+
+  &:hover {
+    background: @txt-color;
+    color: @bg-color;
+  }
+}

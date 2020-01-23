@@ -1,13 +1,17 @@
 .home {
-
+  width: 100%;
+  border-bottom: 2px dashed @line-color;
+  .welcome-container {
+    border-bottom: 2px dashed @line-color;
+    padding: 2rem 0;
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -57,5 +61,7 @@
       width: 30%;
       margin-bottom: 30px;
     }
-  }
-}// home
+    .btn {
+      .button(20rem, @teal, @white)}
+  } // home
+}
