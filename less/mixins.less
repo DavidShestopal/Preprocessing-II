@@ -4,6 +4,11 @@
 @main-color: black;
 @teal: #008080;
 
+.phone-layout() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .button(@width, @bg-color, @txt-color) {
   width: @width;
   background: @bg-color;
@@ -12,9 +17,7 @@
   padding: 1.3rem 3.1rem;
   font-size: 1.8rem;
   text-align: center;
-
-  &:hover {
-    background: @txt-color;
-    color: @bg-color;
-  }
 }
+// media queries
+
+@mobile: ~'(max-width: 500px)';
