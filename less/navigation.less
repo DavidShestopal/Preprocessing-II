@@ -1,1 +1,40 @@
 // Navigation Styles here
+nav {
+  width: 100%;
+  border-bottom: 2px dashed @line-color;
+  display: flex;
+
+  @media @mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-bar {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2.3rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    justify-content: flex-end;
+  }
+
+  h1 {
+    margin-top: 10px;
+    margin-left: 23%;
+    @media @mobile {
+      margin: 0;
+    }
+  }
+
+  a {
+    font-size: 1.58em;
+    text-decoration: none;
+    padding: 0 1.6rem;
+    color: @main-color;
+    @media @mobile {
+    }
+  }
+}
